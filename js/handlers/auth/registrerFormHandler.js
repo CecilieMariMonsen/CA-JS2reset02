@@ -1,6 +1,6 @@
 import { register } from "../../api/auth/register.js";
 import { displayMessage } from "../../ui/common/displayMessage.js";
-//import { getToken } from "../../helpers/auth/getToken.js";
+
 
 export function registerFormHandler() {
   const form = document.querySelector("#registerForm");

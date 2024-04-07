@@ -15,4 +15,3 @@ export function renderDeletPost(id) {
 }
 
 
-// skal eg bruke denne eller bruker eg den i  renderSrcPost.js og renderAddPost.js?

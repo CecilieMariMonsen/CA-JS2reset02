@@ -4,7 +4,6 @@ import { displayPostsHandler } from "../js/handlers/posts/displayPostsHandler.js
 import { displaySinglePostHandler } from "./handlers/posts/displaySinglePostHandler.js";
 import { srcPostHandler } from "./handlers/posts/srcPostHandler.js";
 import { newPostFormHandler } from "./handlers/posts/newPostHandler.js";
-//import { deletePostHandler} from "./handlers/posts/deletPostHandler.js"; 
 import { editPostFormHandler } from "./handlers/posts/editPosFormtHandler.js";
 import { filterPostHandler } from "./handlers/posts/filterPostsHandler.js";
 
@@ -26,8 +25,7 @@ console.log(pathname);
         case "/thePosts/index.html":
               displayPostsHandler();
               newPostFormHandler();
-             // deletePostHandler();
-             filterPostHandler();
+              filterPostHandler();
               srcPostHandler();
         break; 
 

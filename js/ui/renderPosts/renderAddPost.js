@@ -19,11 +19,6 @@ function createPost(post) {
     const title = document.createElement("h2");
     title.textContent = heading;
 
-    // const image = document.createElement("img");
-    // image.src = media;
-    // image.alt = "Post Image";
-    // image.classList.add("post-image");
-
     const tagParagraph = document.createElement("p");
     tagParagraph.textContent = "Tags: " + tags.join(", ");
     tagParagraph.classList.add("post-tags");

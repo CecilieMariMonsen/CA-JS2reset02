@@ -31,16 +31,6 @@ export function newPostFormHandler() {
                 console.log(error);
                 displayMessage("message", "danger", error);
             }
-
-
-            // newPost(postDetails)
-            //     .then(() => {
-            //         window.location.href = "/thePosts/index.html";
-            //     })
-            //     .catch((error) => {
-            //         console.log(error);
-            //         displayMessage("message", "danger", error);
-            //     });
         });
     }
 }

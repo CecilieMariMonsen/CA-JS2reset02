@@ -39,7 +39,7 @@ async function handleSearchForm(event, searchInput) {
 
         const filteredPosts = searchPosts(posts, searchQuery);
         
-        renderSearchResults("#srcResualt", filteredPosts); //#srcResualt er id til div i html
+        renderSearchResults("#srcResualt", filteredPosts); 
        
         //console.log("Posts rendered");
         

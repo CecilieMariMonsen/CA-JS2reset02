@@ -1,8 +1,6 @@
 import { postsURL } from "../../constants/api.js";
 import { getToken } from "../../helpers/auth/getToken.js";
-//import { displayMessage } from "../../ui/common/displayMessage.js";
-
-//skal eg ta inn messsage her?
+import { displayMessage } from "../../ui/common/displayMessage.js";
 
 export async function deletePost(postId) { 
     const token = getToken();
@@ -26,7 +24,7 @@ export async function deletePost(postId) {
     console.log(response);
 
     if (!response.ok) {
-      //  displayMessage("#message", "danger", error.message)
+       displayMessage("#message", "danger", error.message)
         throw new Error(json.errors[0].message);
     }
 
