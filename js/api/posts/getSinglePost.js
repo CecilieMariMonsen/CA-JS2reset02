@@ -1,6 +1,12 @@
 import { postsURL } from "../../constants/api.js";
 import { getToken } from "../../helpers/auth/getToken.js";
 
+/**
+ * Function to get a single post by id
+ * and display the post in the single post page
+ * 
+ */
+
 export async function getSinglePosts(id) {
     const token = getToken();
 

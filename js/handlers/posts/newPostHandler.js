@@ -1,6 +1,10 @@
-
 import { displayMessage } from "../../ui/common/displayMessage.js";
 import { newPost } from "../../api/posts/newPost.js";
+
+/**
+ * Function to handle the new post form
+ * 
+ */
 
 export function newPostFormHandler() {
     const form = document.querySelector("#newPostForm");

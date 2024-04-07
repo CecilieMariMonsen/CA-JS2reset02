@@ -1,6 +1,6 @@
 import { postsURL } from "../../constants/api.js";
 import { getToken } from "../../helpers/auth/getToken.js";
-import { displayMessage } from "../../ui/common/displayMessage.js";
+//import { displayMessage } from "../../ui/common/displayMessage.js";
 import { addPostToFeed } from "../../ui/renderPosts/renderAddPost.js";
 
 
@@ -27,12 +27,12 @@ const json = await response.json();
 console.log(response);
 
 if (!response.ok) 
-    {displayMessage("#message", "danger", error.message)
+    //displayMessage("#message", "danger", error.message)
     throw new Error(json.errors[0].message);
     
     addPostToFeed("#posts", json);
 
 return json;
-}
+} 
 
 

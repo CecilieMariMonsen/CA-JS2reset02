@@ -3,7 +3,9 @@ import { renderSearchResults} from "../../ui/renderPosts/renderSrcPost.js";
 import { srcPosts } from "../../api/posts/srcPost.js";
 
 /**
- * Function to handle the search form
+ * Function to handle the search form 
+ * To search for posts by tags
+ * 
  */
 
 document.addEventListener("DOMContentLoaded", srcPostHandler);
