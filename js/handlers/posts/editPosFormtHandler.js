@@ -15,7 +15,7 @@ export async function editPostFormHandler() {
     const form = document.querySelector("#editPostForm");
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get('id');
-    const posts = await getPosts(id); //hvorfor sier await ikke virker??
+    const posts = await getPosts(id); 
     const postData = posts.find(post => post.id == id)
 
     document.title = `${postData.title} | JS 2`;
