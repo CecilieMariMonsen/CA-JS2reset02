@@ -6,6 +6,8 @@ import { getPosts } from "../../api/posts/getPosts.js";
  * Function to handle the edit post form
  * if no post is found, an error message is displayed
  * if the post is found, the form is filled with the post data and the you can edit the post and update it 
+ * 
+ * @returns {Promise<void>}
  */
 
 export async function editPostFormHandler() {
@@ -41,6 +43,8 @@ export async function editPostFormHandler() {
             const tagsInput = document.querySelector("#tags");
             postDetails.tags = tagsInput.value.split(",");
             postDetails.id = id;
+
+            //try catch block to catch any errors
             
             try { 
                 await updatePost(postDetails);
@@ -53,16 +57,6 @@ export async function editPostFormHandler() {
                 console.log(error);
                 displayMessage("message", "danger", error);
             }
-
-
-            // updatePost(postDetails)
-            //     .then(() => {
-            //         window.location.href = "/thePosts/index.html";
-            //     })
-            //     .catch((error) => {
-            //         console.log(error);
-            //         displayMessage("message", "danger", error);
-            //     });
         });
     }
 }

@@ -1,3 +1,10 @@
+/**
+ * this function will render a single post
+ * it wil make a div element with the post data and append it to the parent element
+ * it will also add h2, p, img and p elements to the div element
+ *  
+ */
+
 
 export function renderPost(parent, post, postId) {
     const container = document.querySelector(parent);
@@ -32,11 +39,6 @@ function createPost(post, postId) {
 
       const publish = document.createElement("p");
       publish.textContent = created;
-
-
-    // const link = document.createElement("a");
-    // link.href = `/singelPost/index.html?id=${postId}`;
-    // link.classList.add("post-link");
 
     postContainer.append(title, image, content, publish);
    

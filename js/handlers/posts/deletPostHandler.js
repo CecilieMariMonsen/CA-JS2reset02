@@ -2,8 +2,18 @@
 import { deletePost } from "../../api/posts/deletePost.js";
 import { displayMessage } from "../../ui/common/displayMessage.js";
 
+/**
+ * Function to handle the delete post
+ * if no post is found, an error message is displayed 
+ * if the post is found, the post is deleted
+ * this only works if the atuhor of the post is the same as the user deleting the post
+ * 
+ * @param {number} id - the id of the post
+ * @returns {Promise<void>}
+ *  
+ * */
+
 export async function deletePostHandler(id) {
-    //const querystring = window.location.search; //trenger eg denne??
   
     try {
         if (!id) {

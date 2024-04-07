@@ -2,6 +2,9 @@ import { displayMessage } from "../../ui/common/displayMessage.js";
 import { renderSearchResults} from "../../ui/renderPosts/renderSrcPost.js";
 import { srcPosts } from "../../api/posts/srcPost.js";
 
+/**
+ * Function to handle the search form
+ */
 
 document.addEventListener("DOMContentLoaded", srcPostHandler);
 
